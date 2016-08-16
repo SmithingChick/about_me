@@ -53,4 +53,4 @@ if (game.toLowerCase() === 'yes' || game.toLowerCase() === 'y') {
 } else {
   alert('You haven\'t heard about Conspiracy Dice yet?');
 }
-console.log('It\'s the only possible explaination for the insanity that comes out of Alex Jones mouth.');
+console.log('It\'s the only possible explanation for the insanity that comes out of Alex Jones mouth.');

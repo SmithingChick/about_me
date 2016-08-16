@@ -44,6 +44,22 @@ p {
   font-family: "Verdana", sans-serif;
 }
 
+a:link {
+  color: #b30000;
+}
+
+a:visited {
+  color: #660000;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+a:active {
+  color: #ff4d4d;
+}
+
 .container {
   width: 800px;
   margin: 0px auto;
