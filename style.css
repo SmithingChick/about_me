@@ -1,0 +1,50 @@
+
+@font-face {
+font-family: 'Proza Libre', 'Verdana', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Proza+Libre");
+}
+
+body {
+  background-color: #ffe6e6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather Sans', 'Verdana', sans-serif;
+}
+
+h1, h2 {
+  color: #660000;
+  font-weight: 700;
+}
+
+h1 {
+  color: #660000;
+  padding-left: 50px;
+}
+
+h2 {
+  color: #660000;
+  padding-left: 75px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: #660000;
+  margin-bottom: 50px;
+}
+
+h4 {
+  color: #cc0000;
+  padding-left: 25px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: verdana;
+}
+
+.container {
+  width: 800px;
+  margin: 0px auto;
+}
