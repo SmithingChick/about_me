@@ -93,7 +93,10 @@ ul, ol {
   padding-top: 50px;
 }
 
-footer {
-    width: 800px;
-    position: center;
+
+::after header {
+  content: "";
+  display: block;
+  clear: both;
+  padding-bottom: 50px;
 }
