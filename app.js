@@ -55,7 +55,7 @@ if (game.toLowerCase() === 'yes' || game.toLowerCase() === 'y') {
 }
 console.log('It\'s the only possible explanation for all of the insanity that comes out of Alex Jones mouth.');
 
-// Question 6 - Degrees
+// Question 6 - Higher Learning
 var degrees = prompt('How many college degrees do I have?');
 
 degrees = Number(degrees);
@@ -72,8 +72,8 @@ console.log('I\'d probably just stay in school forever if they\'d let me.');
 var city =  prompt('Can you guess a city that I\'ve lived in?');
 
 if (city.toLowerCase() === 'erie' || city.toLowerCase() === 'baltimore' || city.toLowerCase() === 'wattsburg' || city.toLowerCase() === 'grand forks' || city.toLowerCase() === 'salem' || city.toLowerCase() === 'portland') {
-  alert('I\'ve lived in Erie, PA; Baltimore, MD; Wattsburg,PA; Grand Forks, ND; Portland, OR; and Salem, OR. I\'m currently in Portland & I love it');
+  alert('I\'ve lived in Erie, PA; Baltimore, MD; Wattsburg,PA; Grand Forks, ND; Portland, OR; and Salem, OR. I\'m currently in Portland & I love it!');
 } else {
-  alert('Nope. I\'ve never lived in ' + city);
+  alert('Nope. I\'ve never lived in ' + city + '.');
 }
 console.log('I did not die of cholera.');
