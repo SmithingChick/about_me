@@ -24,6 +24,7 @@ function tshirts() {
 
   if (tShirts.toLowerCase() === 'yes' || tShirts.toLowerCase() === 'y') {
     alert('I certainly do! I\'ve got a closet full of them.');
+    totalCorrect++;
   } else {
     alert('You haven\'t seen me too often. I just about live in my many, many t-shirts.');
   }
@@ -37,6 +38,7 @@ function music() {
 
   if (musicQuestionAnswer.toLowerCase() === 'yes' || musicQuestionAnswer.toLowerCase() === 'y') {
     alert('No. I do not. Not even a little.');
+    totalCorrect++;
   } else {
     alert('You\'re right! I do not. I\'m not into jam bands, either');
   }
@@ -50,6 +52,7 @@ function books() {
 
   if (books.toLowerCase() === 'yes' || books.toLowerCase() === 'y') {
     alert('"Oh, the banging & the clanging of the bells!" He\'s my all-time favorite author');
+    totalCorrect++;
   } else {
     alert('Quoth the Raven "Nevermore" I first read all of his short stories when I was 9. My parents were fans');
   }
@@ -63,6 +66,7 @@ function game() {
 
   if (game.toLowerCase() === 'yes' || game.toLowerCase() === 'y') {
     alert('I am! Conspiracy Dice is currently in the play testing phase.');
+    totalCorrect++;
   } else {
     alert('You haven\'t heard about Conspiracy Dice yet?');
   }
@@ -79,6 +83,7 @@ function degrees() {
     console.log('degreesQ = ', degreesQ);
     if (degreesQ === degreesA) {
       alert('That\'s right! I have a BA in  Psychology (with an Art Therapy minor), an MA in Studio Art: Jewelry/Metalsmithing, and an MFA in Studio Art: Jewelry/Metalsmithing');
+      totalCorrect++;
     } else if (degreesQ < degreesA) {
       alert('Nope! I\'ve got more than that.');
     } else if (degreesQ > degreesA) {
@@ -97,17 +102,24 @@ function home() {
   var cityA = ['erie', 'baltimore', 'wattsburg', 'grand forks', 'salem', 'portland'];
   var correct = false;
   for (var i = 5; i >= 0 && correct != true; i--) {
-    var cityQ = prompt('Can you guess a city that I\'ve lived in? You have 6 guesses.').toLowerCase();
+    var cityQ = prompt('Can you guess a city that I\'ve lived in? You have ' + (i + 1) + ' guesses.').toLowerCase();
     if (cityQ == cityA[0] || cityQ == cityA[1] || cityQ == cityA[2] || cityQ == cityA[3] || cityQ == cityA[4] || cityQ == cityA[5]) {
       alert('That\'s right!');
+      totalCorrect++;
       correct = true;
     } else {
-      alert('Nope. I\'ve never lived in ' + cityQ + '. You have ' + i + ' guesses remaining.');
+      alert('Nope. I\'ve never lived in ' + cityQ);
     }
     console.log('I did not die of cholera.');
   }
+  alert('I\'ve lived in Erie, PA; Baltimore, MD; Wattsburg,PA; Grand Forks, ND; Portland, OR; and Salem, OR. I\'m currently in Portland & I love it!');
 }
 home();
 
-
-alert('I\'ve lived in Erie, PA; Baltimore, MD; Wattsburg,PA; Grand Forks, ND; Portland, OR; and Salem, OR. I\'m currently in Portland & I love it!');
+if (totalCorrect >= 6) {
+  alert('You got ' + totalCorrect + ' answers correct. Good Job!');
+} else if (totalCorrect >= 4) {
+  alert('You got ' + totalCorrect + ' answers correct. Not too bad.');
+} else {
+  alert('You got ' + totalCorrect + ' answers correct. You suck!');
+}
