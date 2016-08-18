@@ -18,13 +18,14 @@ h1, h2 {
 
 h1 {
   font-weight: 700;
-  padding-left: 50px;
+  padding-left: 275px;
+  padding-top: 50px;
 }
 
 h2 {
   font-weight: 600;
   font-style: italic;
-  padding-left: 75px;
+  padding-left: 300px;
   margin-bottom: 50px;
 }
 
@@ -63,4 +64,17 @@ a:active {
 .container {
   width: 800px;
   margin: 0px auto;
+}
+
+.mark {
+  height: 150px;
+  float: left;
+  padding-left: 100px;
+}
+
+::after header {
+  content: "";
+  display: block;
+  clear: both;
+  padding-bottom: 50px;
 }
