@@ -74,11 +74,20 @@
 // }
 
 // Question 7 - Cities
-var city =  prompt('Can you guess a city that I\'ve lived in?');
 
-if (city.toLowerCase() === 'erie' || city.toLowerCase() === 'baltimore' || city.toLowerCase() === 'wattsburg' || city.toLowerCase() === 'grand forks' || city.toLowerCase() === 'salem' || city.toLowerCase() === 'portland') {
-  alert('I\'ve lived in Erie, PA; Baltimore, MD; Wattsburg,PA; Grand Forks, ND; Portland, OR; and Salem, OR. I\'m currently in Portland & I love it!');
-} else {
-  alert('Nope. I\'ve never lived in ' + city + '.');
+var cityA = ['erie', 'baltimore', 'wattsburg', 'grand forks', 'salem', 'portland'];
+var correct = false;
+
+for (var i = 5; i >= 0 && correct != true; i--) {
+  var cityQ = prompt('Can you guess a city that I\'ve lived in? You have 6 guesses.').toLowerCase();
+  if (cityQ == cityA[0] || cityQ == cityA[1] || cityQ == cityA[2] || cityQ == cityA[3] || cityQ == cityA[4] || cityQ == cityA[5]) {
+    alert('That\'s right!');
+    correct = true;
+  } else {
+    alert('Nope. I\'ve never lived in ' + cityQ + '. You have ' + i + ' guesses remaining.');
+  }
+  console.log('I did not die of cholera.');
 }
-console.log('I did not die of cholera.');
+
+
+alert('I\'ve lived in Erie, PA; Baltimore, MD; Wattsburg,PA; Grand Forks, ND; Portland, OR; and Salem, OR. I\'m currently in Portland & I love it!');
