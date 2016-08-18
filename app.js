@@ -36,12 +36,12 @@ if (musicQuestionAnswer.toLowerCase() === 'yes' || musicQuestionAnswer.toLowerCa
 console.log('Cue up The Violets "I Hate the Greatful Dead" url="https://www.youtube.com/watch?v=ZN_3o59HFAc"');
 
 // Question 4 - Books
-var books = prompt('Do I read a lot of Edgar Allen Poe?');
+var books = prompt('Do I read a lot of Edgar Allan Poe?');
 
 if (books.toLowerCase() === 'yes' || books.toLowerCase() === 'y') {
-  alert('Quothe the Raven "Nevermore"');
-} else {
   alert('"Oh, the banging & the clanging of the bells!" He\'s my all-time favorite author');
+} else {
+  alert('Quoth the Raven "Nevermore" I first read all of his short stories when I was 9. My parents were fans');
 }
 console.log('Heading into the Maelstrom for a Cask of Amontillado from the House of Usher');
 
@@ -53,4 +53,27 @@ if (game.toLowerCase() === 'yes' || game.toLowerCase() === 'y') {
 } else {
   alert('You haven\'t heard about Conspiracy Dice yet?');
 }
-console.log('It\'s the only possible explanation for the insanity that comes out of Alex Jones mouth.');
+console.log('It\'s the only possible explanation for all of the insanity that comes out of Alex Jones mouth.');
+
+// Question 6 - Degrees
+var degrees = prompt('How many college degrees do I have?');
+
+degrees = Number(degrees);
+if (degrees === 3) {
+  alert('That\'s right! I have a BA in  Psychology \(with an Art Therapy minor\)\, an MA in Studio Art: Jewelry/Metalsmithing\, and an MFA in Studio Art: Jewelry/Metalsmithing');
+} else if (degrees < 3) {
+  alert('Nope! I\'ve got more than that.');
+} else {
+  alert('Alas, I only have 3. I\'m not allowed to get any more.');
+}
+console.log('I\'d probably just stay in school forever if they\'d let me.');
+
+// Question 7 - Cities
+var city =  prompt('Can you guess a city that I\'ve lived in?');
+
+if (city.toLowerCase() === 'erie' || city.toLowerCase() === 'baltimore' || city.toLowerCase() === 'wattsburg' || city.toLowerCase() === 'grand forks' || city.toLowerCase() === 'salem' || city.toLowerCase() === 'portland') {
+  alert('I\'ve lived in Erie, PA; Baltimore, MD; Wattsburg,PA; Grand Forks, ND; Portland, OR; and Salem, OR. I\'m currently in Portland & I love it');
+} else {
+  alert('Nope. I\'ve never lived in ' + city);
+}
+console.log('I did not die of cholera.');
